@@ -38,6 +38,7 @@
 .projects-item p{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+    font-family: 'Source Serif Pro';
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;

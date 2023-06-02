@@ -1,0 +1,65 @@
+.choose-us{
+    padding: 3.5%;
+}
+
+.choose-us h3{
+    font-size: 38px;
+    font-weight: 600;
+    color: #002F2F;
+    font-family: 'Source Serif Pro';
+    margin: 20px;
+    text-align: center;
+}
+
+.choose-us h3>span{
+    color: #069e9e;
+}
+
+.choose-us--info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.choose-us--info---item{
+    width: 33%;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.choose-us--info---item span{
+    font-size: 68px;
+    color: #002F2F;
+    font-family: 'Source Serif Pro';
+    border-bottom: 1px solid #002F2F;
+}
+
+.choose-us--info---item p{
+    font-size: 18px;
+    color: #002F2F;
+    font-family: 'Source Serif Pro';
+    text-align: center;
+    margin-top: 20px;
+    min-height: 60px;
+}
+
+@media (max-width: 610px) {
+    .choose-us h3{
+        font-size: 28px;
+
+    }
+    .choose-us--info---item p{
+        font-size: 14px;
+
+    }
+    .choose-us--info---item span{
+        font-size: 60px;
+    }
+
+}
+
+

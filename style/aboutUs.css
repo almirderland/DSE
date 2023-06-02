@@ -1,0 +1,57 @@
+.about-us{
+    background-color: #002F2F;
+}
+.about-us-div{
+    padding: 3.5%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.about-us--images {
+    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us--images img{
+    width: 270px;
+    height: 270px;
+    margin: 5px;
+}
+
+.about-us--text{
+    width: 50%;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.55;
+}
+
+.about-us--text h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+@media (max-width: 715px) {
+    .about-us-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;    }
+
+    .about-us--text{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .about-us--images {
+        width: 60%;
+    }
+
+    .about-us--images img{
+        width: 170px;
+        margin: 5px;
+    }
+
+}

@@ -1,0 +1,160 @@
+.main{
+    /* width: 100vw; */
+    height: 90vh;
+    background-image: url('../images/doroga.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-img{
+    background: linear-gradient(90deg, #011717 17.76%, rgba(0, 0, 0, 0.687449) 41.44%, rgba(196, 196, 196, 0) 90%);
+    height: 90vh;
+}
+
+.main-img h1{
+    color: #ffffff;
+    font-size: 34px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.25;
+    font-weight: 300;
+    background-position: center center;
+    border-style: solid;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.main-img h1 strong{
+    font-weight: 700;
+}
+
+.main-img div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.main-img div a{
+    text-decoration: none;
+    background-color:#002F2F ;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 1.5%;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1%;
+    font-family: 'Source Serif Pro';
+
+}
+
+.main-img div a:last-child{
+    background-color:transparent ;
+    color: #fff;
+    border: 3px solid #fff ;
+}
+
+.main-items{
+    margin-top: 5%;
+}
+.main-items, .items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.items{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    border: 3px solid #fff;
+    border-radius: 30px;
+    margin-right: 1%;
+    width: 25%;
+    box-sizing: border-box;
+    min-height: 80px;
+}
+
+.item-text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+}
+
+.item-text p{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.25;
+    font-weight: 300;
+}
+
+.item-text span{
+    color: #069e9e;
+    font-size: 13px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.55;
+    font-weight: 500;
+}
+.item-img{
+    width: 20%;
+    background-color: #002F2F;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.item-img img{
+    max-width: 50%;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(338deg) brightness(102%) contrast(101%)
+}
+
+@media (max-width: 880px) {
+    .main-img h1{
+        font-size: 26px;
+        line-height: 1.2;    
+    }
+    .item-text p{
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    
+    .item-text span{
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .main-items{
+        flex-wrap: wrap;
+    }
+    .items{
+        height: 30px;
+        width: 40vw;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .main-img h1{
+        font-size: 20px;
+        line-height: none;    
+    }
+    .item-text p{
+        font-size: 10px;
+        line-height: none;
+    }
+    
+    .item-text span{
+        font-size: 8px;
+        line-height: none;
+    }
+    .main-items{
+        flex-wrap: wrap;
+    }
+    .items{
+        height: 30px;
+        width: 60vw;
+    }
+}

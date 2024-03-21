@@ -90,7 +90,7 @@ form .link-button img {
   width: 42px;
   height: 42px;
 }
-form button {
+form span {
   font-family: "Source Serif Pro";
   outline: none;
   border: none;
@@ -119,6 +119,11 @@ form button {
   }
 
   form h5 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .forms a {
     font-size: 13px;
     text-align: center;
   }

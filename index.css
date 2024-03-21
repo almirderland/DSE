@@ -14,14 +14,7 @@
 
 
 a {
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #fff;
 }
 
-a[href^="tel"],
-a[href^="sms"] {
-    pointer-events: none;
-    cursor: default;
-    color: inherit;
-    text-decoration: none;
-}

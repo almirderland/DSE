@@ -67,6 +67,11 @@ form h5 i {
   font-weight: 600;
 }
 
+.forms a i a {
+  color: #fff;
+  text-decoration: none;
+}
+
 form .link-button {
   text-decoration: none;
   display: flex;

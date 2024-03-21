@@ -14,7 +14,9 @@
 .header-logo img{
     width: 130px;
 }
-
+.header-logo a{
+    display: none;
+}
 .header-links{
     padding: 1%;
     width: 60%;
@@ -60,5 +62,16 @@
 @media (max-width: 729px) {
     .header-links{
         display: none;
+    }
+    .header-logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 12px;
+    }
+    .header-logo a{
+        display: block;
+        color: #fff;
     }
 }

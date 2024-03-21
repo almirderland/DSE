@@ -11,3 +11,17 @@
 @import url("style/services.css");
 @import url("style/modal.css");
 @import url("https://fonts.googleapis.com/css?family=Source Serif Pro");
+
+
+a {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a[href^="tel"],
+a[href^="sms"] {
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
+}

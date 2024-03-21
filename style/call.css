@@ -50,15 +50,30 @@ form h5 {
   padding: 1%;
 }
 
+.forms a {
+  font-size: 20px;
+  line-height: 1.23;
+  padding: 1%;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Source Serif Pro';
+}
+
 form h5 i {
   font-weight: 600;
 }
 
+.forms a i {
+  font-weight: 600;
+}
+
 form .link-button {
-    text-decoration: none;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #fff;
   font-family: "Source Serif Pro";
   margin: 2%;
   border: 3px solid #fff;

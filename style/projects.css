@@ -39,7 +39,7 @@
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-family: 'Source Serif Pro';
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
     margin-top: -30%; 
@@ -47,7 +47,7 @@
 
 @media (max-width: 1245px) {
     .projects-item p{
-        font-size: 1.3em;
+        font-size: 18px;
         margin-top: -40%; 
     }
 }

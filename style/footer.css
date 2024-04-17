@@ -14,7 +14,7 @@ footer{
 }
 
 .footer-item h5{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 1rem;
     color: #002F2F;
@@ -23,7 +23,7 @@ footer{
 .footer-item a{
     text-decoration: none;
     color: #002F2F;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 1rem;
 }

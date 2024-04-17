@@ -30,7 +30,7 @@ form input {
   border-bottom: 2px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 20px;
   font-family: "Source Serif Pro";
   margin: 2%;
   padding: 2%;
@@ -96,7 +96,7 @@ form span {
   border: none;
   background-color: transparent;
   color: #fff;
-  font-size: 1em;
+  font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
 }

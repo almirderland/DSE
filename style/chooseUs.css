@@ -2,7 +2,7 @@
     padding: 3.5%;
 }
 
-.choose-us h3{
+.choose-us h2{
     font-size: 38px;
     font-weight: 600;
     color: #002F2F;
@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.choose-us h3>span{
+.choose-us h2>span{
     color: #069e9e;
 }
 

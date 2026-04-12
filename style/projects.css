@@ -1,4 +1,4 @@
-.projects h5{
+.projects h2{
     color: #002F2F;
     font-size: 34px;
     font-family: 'Source Serif Pro';
@@ -11,7 +11,7 @@
     padding-top: 2%;
 }
 
-.projects h5 i{
+.projects h2 i{
     color: #069e9e;
 }
 

@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.price h3{
+.price h2{
     color: #002F2F;
     font-size: 34px;
     font-family: 'Source Serif Pro';
@@ -18,7 +18,7 @@
     padding: 4% 2%;
 }
 
-.price h3 i{
+.price h2 i{
     color: #069e9e;
 }
 

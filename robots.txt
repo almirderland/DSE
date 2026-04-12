@@ -4,4 +4,4 @@ Disallow: /tmp/
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://www.roadalmaty.kz/sitemap.xml
+Sitemap: https://roadalmaty.kz/sitemap.xml

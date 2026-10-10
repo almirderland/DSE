@@ -14,31 +14,34 @@
 .header-logo img{
     width: 130px;
 }
-.header-logo a{
+.header-logo .header-phone{
     display: none;
 }
 .header-links{
-    padding: 1%;
-    width: 60%;
+    padding: 1% 24px 1% 0;
+    flex: 1;
+    margin-left: 16px;
     text-transform: uppercase;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 28px;
 }
 
 .header-links a{
     text-decoration: none;
     color: #fff;
     font-family: 'Source Serif Pro';
+    white-space: nowrap;
 }
 
 .header-links button{
     background-color: transparent;
     color: #fff;
-    border: none;
     border-radius: 30px;
-    padding: 2%;
+    padding: 10px 20px;
+    font-family: 'Source Serif Pro';
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -47,7 +50,11 @@
 
 @media (max-width: 1134px) {
     .header-links{
-        width: 80%;
+        gap: 18px;
+    }
+    .header-links button{
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
 }
@@ -55,7 +62,15 @@
 @media (max-width: 904px) {
     .header-links{
        font-size: 13px;
-
+       flex-wrap: wrap;
+       row-gap: 10px;
+       column-gap: 14px;
+       padding: 10px 16px 10px 0;
+    }
+    .header-links button{
+        font-size: 12px;
+        padding: 6px 12px;
+        border-width: 2px;
     }
 }
 
@@ -70,7 +85,7 @@
         justify-content: space-between;
         padding-right: 12px;
     }
-    .header-logo a{
+    .header-logo .header-phone{
         display: block;
         color: #fff;
     }

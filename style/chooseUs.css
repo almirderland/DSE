@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 610px) {
-    .choose-us h3{
+    .choose-us h2{
         font-size: 28px;
 
     }
@@ -57,7 +57,14 @@
 
     }
     .choose-us--info---item span{
-        font-size: 60px;
+        font-size: 36px;
+    }
+    .choose-us--info{
+        gap: 8px;
+    }
+    .choose-us--info---item p{
+        font-size: 13px;
+        margin-top: 12px;
     }
 
 }

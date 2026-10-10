@@ -28,7 +28,7 @@
 
 .services-info--item{
     width: 45%;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -51,7 +51,7 @@
 
 .services-info--item p{
     text-align: left;
-    margin: 40px;
+    margin: 0 30px 16px;
 }
 
 .services-info--item img{
@@ -59,12 +59,36 @@
     box-shadow: 5px 5px 15px rgba(0,0,0,.3);
 }
 
-.services-info--item h5, .services-info--items h5{
+.services-info--item h3, .services-info--items h3{
     font-size: 24px;
     font-weight: 600;
     color: #002F2F;
     font-family: 'Source Serif Pro';
-    margin: 40px;
+    margin: 24px 30px 14px;
+}
+
+.services h2 a,
+.services-info--item h3 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.services-info--item h3 a:hover{
+    color: #069e9e;
+}
+
+.services-more{
+    display: inline-block;
+    margin: 0 30px;
+    color: #069e9e;
+    font-family: 'Source Serif Pro';
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.services-more:hover{
+    text-decoration: underline;
 }
 
 table{
@@ -84,10 +108,50 @@ table{
         width: 100%;
         flex-direction: column;
     }
-    .services-info--item h5{
+    .services-info--item h3{
         margin: 5px 0;
     }
     .services-info--item p{
         margin: 0;
+    }
+    .services-more{
+        margin: 10px 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .services{
+        padding: 32px 16px 0;
+    }
+    .services h2{
+        font-size: 28px;
+        margin: 0 0 16px;
+    }
+    .services p{
+        text-align: left;
+        margin: 0 0 16px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
+    .services-info--item{
+        height: auto;
+        margin: 0 0 32px;
+    }
+    .services-info--item img{
+        width: 100%;
+    }
+    .services-info--item h3, .services-info--items h3{
+        font-size: 20px;
+        margin: 12px 0 6px;
+    }
+    .services-info--items{
+        margin: 0 0 32px;
+    }
+    .services-info--items img{
+        width: 100%;
+    }
+    .services-info--items table{
+        margin: 0;
+        font-size: 14px;
     }
 }

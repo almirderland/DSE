@@ -106,8 +106,35 @@
     margin-left: 10px;
 }
 
+/* .main-img div above sets flex/margin on every nested div — reset it for the cards */
+.main-img .main-items{
+    align-items: stretch;
+}
+
+.main-img .main-items .items{
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.main-img .item-text{
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.main-img .item-img{
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    margin: 0 0 0 12px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
 .item-img img{
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
     filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(338deg) brightness(102%) contrast(101%)
 }
 
@@ -137,24 +164,54 @@
 }
 
 @media (max-width: 500px) {
+    .main{
+        height: auto;
+        min-height: 90vh;
+    }
+    .main-img{
+        height: auto;
+        min-height: 90vh;
+        padding: 0 16px 24px;
+        box-sizing: border-box;
+    }
     .main-img h1{
-        font-size: 20px;
-        line-height: none;    
+        font-size: 22px;
+        line-height: 1.25;
+        padding-top: 32px;
+    }
+    .main-img div a{
+        padding: 10px 18px;
+        font-size: 14px;
+        margin: 0 6px;
     }
     .item-text p{
-        font-size: 10px;
-        line-height: none;
+        font-size: 13px;
+        line-height: 1.25;
     }
-    
+
     .item-text span{
-        font-size: 8px;
-        line-height: none;
+        font-size: 11px;
+        line-height: 1.4;
     }
     .main-items{
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 28px;
+        padding: 0;
     }
-    .items{
-        height: 30px;
-        width: 60vw;
+    .main-img .main-items .items{
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        min-height: 64px;
+        margin: 0;
+        padding: 10px 14px;
+    }
+    .main-img .item-img{
+        width: 44px;
+        height: 44px;
+        margin-left: 10px;
+        padding: 9px;
     }
 }

@@ -109,9 +109,16 @@ form span {
 }
 
 @media (max-width: 615px) {
+  .forms {
+    height: auto;
+    margin: 0;
+    padding: 40px 16px;
+  }
   form {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: auto;
+    padding: 24px 12px;
+    box-sizing: border-box;
   }
   form h2 {
     font-size: 18px;

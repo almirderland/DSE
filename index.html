@@ -15,10 +15,31 @@
     <meta property="og:description"
         content="Компания ДСЭ — строительство и ремонт дорог, асфальтирование, ямочный ремонт и благоустройство территорий в Алматы. Опыт с 2003 года. Бесплатный выезд специалиста.">
     <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://roadalmaty.kz/images/doroga.jpg">
+    <meta property="og:image:width" content="960">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="ДСЭ">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index, follow">
     <title>Строительство и ремонт дорог в Алматы | ДСЭ</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap">
+    <link rel="preload" as="image" href="./images/doroga.jpg">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/aboutUs.css">
+    <link rel="stylesheet" href="style/chooseUs.css">
+    <link rel="stylesheet" href="style/reviews.css">
+    <link rel="stylesheet" href="style/price.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/call.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="apple-touch-icon" href="./images/logo.png">
     <link rel="canonical" href="https://roadalmaty.kz/" />
     <script type="application/ld+json">
     {
@@ -28,6 +49,12 @@
       "alternateName": "ДСЭ",
       "description": "Строительство и ремонт дорог, асфальтирование, ямочный ремонт и благоустройство территорий в Алматы",
       "url": "https://roadalmaty.kz/",
+      "logo": "https://roadalmaty.kz/images/dse-logo.png",
+      "image": [
+        "https://roadalmaty.kz/images/doroga.jpg",
+        "https://roadalmaty.kz/images/asfaltirovanie-almaty.jpeg",
+        "https://roadalmaty.kz/images/stroitelstvo-dorog.jpg"
+      ],
       "telephone": "+77012554421",
       "email": "roadalmaty.kz@outlook.com",
       "foundingDate": "2003",
@@ -37,9 +64,23 @@
         "addressLocality": "Алматы",
         "addressCountry": "KZ"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Алматы"
+      "areaServed": [
+        { "@type": "City", "name": "Алматы" },
+        { "@type": "AdministrativeArea", "name": "Алматинская область" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Дорожные работы",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Асфальтирование", "url": "https://roadalmaty.kz/asfaltirovanie/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ямочный ремонт", "url": "https://roadalmaty.kz/yamochnyj-remont/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Строительство дорог", "url": "https://roadalmaty.kz/stroitelstvo-dorog/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Благоустройство территорий", "url": "https://roadalmaty.kz/blagoustrojstvo/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Установка бордюров и габионов", "url": "https://roadalmaty.kz/bordyury/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Водоотведение и арычные лотки", "url": "https://roadalmaty.kz/vodootvedenie/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Озеленение", "url": "https://roadalmaty.kz/ozelenenie/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Аренда дорожного катка и погрузчика", "url": "https://roadalmaty.kz/arenda-spetstehniki/" } }
+        ]
       },
       "sameAs": [
         "https://wa.me/77012554421"
@@ -51,8 +92,8 @@
 <body>
     <header class="header">
         <div class="header-logo">
-            <img src="./images/дсэлого.png" alt="ДСЭ — Дорожное строительство и эксплуатация, Алматы">
-            <a rel="nofollow" href="https://wa.me/77012554421"> +7 (701) 255-44-21</a>
+            <img src="./images/dse-logo.png" alt="ДСЭ — Дорожное строительство и эксплуатация, Алматы" width="396" height="185">
+            <a class="header-phone" href="tel:+77012554421">+7 (701) 255-44-21</a>
         </div>
         <div class="header-links">
             <a href="#aboutUs"> О нас </a>
@@ -60,7 +101,7 @@
             <a href="#projects"> Проекты </a>
             <a href="#reviews"> Отзывы </a>
             <a href="#price"> Цены</a>
-            <a rel="nofollow" href="https://wa.me/77012554421">+7 (701) 255-44-21</a>
+            <a href="tel:+77012554421">+7 (701) 255-44-21</a>
             <a href="#call"><button>Бесплатная консультация</button></a>
         </div>
     </header>
@@ -81,7 +122,7 @@
                         <span>КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</span>
                     </div>
                     <div class="item-img">
-                        <img src="./images/замер.png" alt="Бесплатный замер и консультация">
+                        <img src="./images/icon-measure.png" alt="Бесплатный замер и консультация" width="128" height="128">
                     </div>
                 </div>
                 <div class="items">
@@ -91,7 +132,7 @@
                         <span>ПОД КЛЮЧ</span>
                     </div>
                     <div class="item-img">
-                        <img src="./images/деньги.png" alt="Цена на асфальтирование от 5000 тг/м²">
+                        <img src="./images/icon-money.png" alt="Цена на асфальтирование от 5000 тг/м²" width="128" height="128">
                     </div>
                 </div>
                 <div class="items">
@@ -100,17 +141,17 @@
                         <span>ПОКРЫТИЙ</span>
                     </div>
                     <div class="item-img">
-                        <img src="./images/смета.png" alt="Ямочный ремонт дорожного покрытия">
+                        <img src="./images/icon-estimate.png" alt="Ямочный ремонт дорожного покрытия" width="128" height="128">
                     </div>
                 </div>
                 <div class="items">
                     <div class='item-text'>
                         <p>ВОССТАНОВЛЕНИЕ
-                            ПОКРЫТИй</p>
+                            ПОКРЫТИЙ</p>
                         <span>ПОСЛЕ РАЗРЫТИЯ</span>
                     </div>
                     <div class="item-img">
-                        <img src="./images/работа.png" alt="Восстановление покрытия после разрытия">
+                        <img src="./images/icon-work.png" alt="Восстановление покрытия после разрытия" width="128" height="128">
                     </div>
                 </div>
             </div>
@@ -120,19 +161,19 @@
         <h2> Более 5000 проектов <i> с 2003 года </i></h2>
         <div class="projects-items">
             <div class="projects-item">
-                <img src="./images/фото1.jpg" alt="InstallationOfGabions">
+                <img src="./images/ustanovka-gabionov.jpg" alt="Установка габионов в Алматы" width="231" height="500" loading="lazy">
                 <p>Установка габионов</p>
             </div>
             <div class="projects-item">
-                <img src="./images/фото2.jpg" alt="RoadPaving">
+                <img src="./images/asfaltirovanie-dorog.jpg" alt="Асфальтирование дороги в Алматы" width="231" height="500" loading="lazy">
                 <p>Асфальтирование дорог </p>
             </div>
             <div class="projects-item">
-                <img src="./images/фото3.jpg" alt="InstallationOfDitchTrays">
+                <img src="./images/arychnye-lotki.jpg" alt="Установка арычных лотков" width="231" height="500" loading="lazy">
                 <p>Установка арычных лотков </p>
             </div>
             <div class="projects-item">
-                <img src="./images/фото4.jpg" alt="InstallationOfDrainageSystems">
+                <img src="./images/vodootvedenie.jpg" alt="Монтаж системы водоотведения" width="405" height="500" loading="lazy">
                 <p>Монтаж систем водоотведения</p>
             </div>
         </div>
@@ -140,14 +181,14 @@
     <section class="about-us" id="aboutUs">
         <div class="about-us-div">
             <div class="about-us--images">
-                <img src="./images/онас1.jpg" alt="Команда ДСЭ на объекте дорожного строительства">
-                <img src="./images/онас2.jpg" alt="Укладка асфальта в Алматы">
-                <img src="./images/онас3.png" alt="Дорожная техника ДСЭ">
-                <img src="./images/онас4.jpg" alt="Выполненные проекты по ремонту дорог">
+                <img src="./images/o-nas-1.jpg" alt="Команда ДСЭ на объекте дорожного строительства" width="500" height="334" loading="lazy">
+                <img src="./images/o-nas-2.jpg" alt="Укладка асфальта в Алматы" width="500" height="333" loading="lazy">
+                <img src="./images/o-nas-3.png" alt="Дорожная техника ДСЭ" width="540" height="540" loading="lazy">
+                <img src="./images/o-nas-4.jpg" alt="Выполненные проекты по ремонту дорог" width="510" height="600" loading="lazy">
             </div>
             <div class="about-us--text">
                 <h2> О нас</h2>
-                <p>Мы являемся професссионалами в области благоустройства, ремонта и строительства дорог. Наша команда
+                <p>Мы являемся профессионалами в области благоустройства, ремонта и строительства дорог. Наша команда
                     состоит
                     из опытных профессионалов, которые гарантируют высокое качество работ, надежность и эффективность в
                     каждом проекте. Мы гордимся нашей способностью удовлетворить потребности клиентов и обеспечить
@@ -160,8 +201,8 @@
         <h2>Почему именно <span>МЫ?</span></h2>
         <div class="choose-us--info">
             <div class="choose-us--info---item">
-                <span>21</span>
-                <p>ГОД опыта для качества ваших дорожных покрытии</p>
+                <span>20+</span>
+                <p>ЛЕТ опыта для качества ваших дорожных покрытий</p>
             </div>
             <div class="choose-us--info---item">
                 <span>10000</span>
@@ -177,28 +218,28 @@
         <h2>Отзывы о работе с <span>НАМИ</span></h2>
         <div class="reviews-info">
             <div class="reviews-info--item">
-                <img src="./images/ава4.jpg" alt="Aliya">
+                <img src="./images/otzyv-4.jpg" alt="Алия Сайранова, отзыв об асфальтировании двора" width="900" height="900" loading="lazy">
                 <p>Имя: Алия Сайранова <br>
                     Отзыв: Работа команды профессионалов была превосходной! Они сделали работу по
                     асфальтированию дорог в нашем дворе. Теперь дороги выглядят безопасно для нас и наших
                     детей.</p>
             </div>
             <div class="reviews-info--item">
-                <img src="./images/ава2.jpg" alt="Erlan">
+                <img src="./images/otzyv-2.jpg" alt="Ерлан Темирханов, отзыв о благоустройстве предприятия" width="682" height="1024" loading="lazy">
                 <p>Имя: Ерлан Темирханов <br>
                     Отзыв: Хочу выразить благодарность команде за обустройство дорог на нашем предприятии. Их
                     профессионализм
-                    и отличное качество работы впечатлили меня. Теперь наш двор выглядят привлекательно и ухожено.</p>
+                    и отличное качество работы впечатлили меня. Теперь наш двор выглядит привлекательно и ухожено.</p>
             </div>
             <div class="reviews-info--item">
-                <img src="./images/ава1.jpg" alt="Daria">
+                <img src="./images/otzyv-1.jpg" alt="Дарья Михайлова, отзыв об асфальтировании" width="560" height="700" loading="lazy">
                 <p>Имя: Дарья Михайлова <br>
                     Отзыв: Я очень довольна проделанной работой по асфальтированию дорог. Команда специалистов сделала
                     все в срок, качественно и профессионально. Теперь передвижение по району стало гораздо комфортнее.
                 </p>
             </div>
             <div class="reviews-info--item">
-                <img src="./images/ава3.jpg" alt="Alexei">
+                <img src="./images/otzyv-3.jpg" alt="Алексей Петров, отзыв о благоустройстве территории" width="682" height="1024" loading="lazy">
                 <p>Имя: Алексей Петров <br>
                     Отзыв: Хочу выразить благодарность команде за их высокий уровень профессионализма и ответственность
                     при благоустройстве территории. Результаты их работы говорят сами за себя - дороги стали ровными,
@@ -219,14 +260,14 @@
                     требуемая толщина покрытия.</p>
             </div>
         </div>
-        <button id="myBtn">Расчитать предварительную стоимость</button>
+        <button id="myBtn" type="button" aria-expanded="false" aria-controls="myModal">Рассчитать предварительную стоимость</button>
     </section>
     <section class="myModal" id="myModal">
         <table>
             <thead>
                 <tr>
                     <th scope="col">
-                        <h3>Виды услу</h3>
+                        <h3>Виды услуг</h3>
                     </th>
                     <th scope="col">
                         <h3>Стоимость материала</h3>
@@ -312,9 +353,7 @@
 
                         <p>Вес=0,105 тонн&nbsp;</p>
 
-                        <p><img alt="Монтаж арыка Б-1,5-1"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/aryk-b-1.5-1.jpg"
-                                style="height: 81px; width: 300px;"></p>
+                        <p><img alt="Монтаж арыка Б-1,5-1" src="./images/price/aryk-b-1.5-1.jpg" width="403" height="109" loading="lazy"></p>
                     </td>
                     <td>6500 тг</td>
                     <td>5500 тг/п.м.</td>
@@ -329,9 +368,7 @@
 
                         <p>Вес=0,13 тонн</p>
 
-                        <p><img alt="Монтаж арыка Б-1-1"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/aryk-b-1-1.jpg"
-                                style="height: 176px; width: 300px;"></p>
+                        <p><img alt="Монтаж арыка Б-2-1" src="./images/price/aryk-b-1-1.jpg" width="403" height="237" loading="lazy"></p>
                     </td>
                     <td>5500 тг</td>
                     <td>5500 тг/п.м.</td>
@@ -346,9 +383,7 @@
 
                         <p>Вес=0,425 тонн</p>
 
-                        <p><img alt="Монтаж арыка Б-3-1"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/aryk-b-3-1.jpg"
-                                style="height: 77px; width: 300px;"></p>
+                        <p><img alt="Монтаж арыка Б-3-1" src="./images/price/aryk-b-3-1.jpg" width="403" height="104" loading="lazy"></p>
                     </td>
                     <td>12500 тг</td>
                     <td>9500 тг/п.м.</td>
@@ -365,15 +400,13 @@
                         <p>с вывозом отходов глубиной 5 см</p>
                     </td>
                     <td>&nbsp;</td>
-                    <td>от750 тг/м<sup>2</sup></td>
+                    <td>от 750 тг/м<sup>2</sup></td>
                 </tr>
                 <tr>
                     <td colspan="3">
                         <p>Установка бетонного бортового камня (бордюра)</p>
 
-                        <p><img alt="Установка бетонного бортового камня (бордюра)"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/bordyur.jpg"
-                                style="height: 74px; width: 300px;"></p>
+                        <p><img alt="Установка бетонного бортового камня (бордюра)" src="./images/price/bordyur.jpg" width="397" height="98" loading="lazy"></p>
                     </td>
                 </tr>
                 <tr>
@@ -395,9 +428,7 @@
                     <td>
                         <p>Установка поребриков &nbsp;100*20*8</p>
 
-                        <p><img alt="Установка поребриков"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/porebrik.jpg"
-                                style="height: 61px; width: 300px;"></p>
+                        <p><img alt="Установка поребриков" src="./images/price/porebrik.jpg" width="395" height="80" loading="lazy"></p>
                     </td>
                     <td>1200 тг</td>
                     <td>от 1500 тг</td>
@@ -411,9 +442,7 @@
                     <td>
                         <p>Монтаж трубы под проезжей частью диаметр 500 мм</p>
 
-                        <p><img alt="Монтаж трубы на переездах"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/truba.jpg"
-                                style="height: 79px; width: 403px;"></p>
+                        <p><img alt="Монтаж трубы на переездах" src="./images/price/truba.jpg" width="403" height="79" loading="lazy"></p>
                     </td>
                     <td>12700 тг/м<sup>3</sup></td>
                     <td>5500 тг/м<sup>3</sup></td>
@@ -424,9 +453,7 @@
 
                         <p>830*800*700, V=0,33</p>
 
-                        <p><img alt="Блок смотровых решеток"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/smotrovaya-reshetka.jpg"
-                                style="height: 81px; width: 300px;"></p>
+                        <p><img alt="Блок смотровых решеток" src="./images/price/smotrovaya-reshetka.jpg" width="403" height="109" loading="lazy"></p>
                     </td>
                     <td>35000 тг</td>
                     <td>10000 тг</td>
@@ -435,9 +462,7 @@
                     <td>
                         <p>Монтаж чугунного люка</p>
 
-                        <p><img alt="Монтаж чугунного люка"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/lyuk.jpg"
-                                style="height: 287px; width: 300px;"></p>
+                        <p><img alt="Монтаж чугунного люка" src="./images/price/lyuk.jpg" width="520" height="497" loading="lazy"></p>
                     </td>
                     <td>28000 тг/шт</td>
                     <td>7500 тг</td>
@@ -446,9 +471,7 @@
                     <td>
                         <p>Монтаж канализационных колец, д=1000 мм, V=0.24</p>
 
-                        <p><img alt="Монтаж канализационных колец"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/kanalizatsionnoe-koltso.jpg"
-                                style="height: 172px; width: 300px;"></p>
+                        <p><img alt="Монтаж канализационных колец" src="./images/price/kanalizatsionnoe-koltso.jpg" width="396" height="227" loading="lazy"></p>
                     </td>
                     <td>15000 тг</td>
                     <td>9500 тг</td>
@@ -457,9 +480,7 @@
                     <td>
                         <p>Монтаж железобетонных крышек на кольца, д=1160 мм, V=0.1 усиленная</p>
 
-                        <p><img alt="Монтаж железобетонных крышек на кольца"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/kryshka-na-koltso.jpg"
-                                style="height: 172px; width: 300px;"></p>
+                        <p><img alt="Монтаж железобетонных крышек на кольца" src="./images/price/kryshka-na-koltso.jpg" width="396" height="227" loading="lazy"></p>
                     </td>
                     <td>25700 тг</td>
                     <td>8500 тг</td>
@@ -468,9 +489,7 @@
                     <td>
                         <p>Монтаж колесоотбойного бруса</p>
 
-                        <p><img alt="Монтаж колесоотбойника"
-                                src="http://dorstroy.asia.kz/uploads/5332/4644/image/kolesootboynik.jpg"
-                                style="border: 0px; color: rgb(255, 255, 255); cursor: default; font-family: tahoma, verdana, sans-serif; font-size: 13px; height: 218px; max-width: 100%; vertical-align: middle; width: 300px; background-color: rgb(255, 255, 255);">
+                        <p><img alt="Монтаж колесоотбойника" src="./images/price/kolesootboynik.jpg" width="160" height="116" loading="lazy">
                         </p>
                     </td>
                     <td>&nbsp;</td>
@@ -907,17 +926,18 @@
                 </tr>
             </tbody>
         </table>
+        <button id="closeModal" class="modal-close" type="button">Свернуть таблицу цен</button>
     </section>
     <section class="call" id="call">
         <div class="forms">
             <form action="">
                 <h2>Бесплатная консультация</h2>
-                <h5>Тел: <i> +7 (701) 255-44-21</i> </h5>
+                <a href="tel:+77012554421">Тел: <i>+7 (701) 255-44-21</i></a>
                 <a rel="nofollow" href="mailto:roadalmaty.kz@outlook.com">E-mail: <i>roadalmaty.kz@outlook.com</i>
                 </a>
                 <a rel="nofollow" href="https://wa.me/77012554421" class="link-button">
-                    <img src="./images/whatsapp.png" alt="WhatsApp">
-                    <span>Написать в What'sApp</span>
+                    <img src="./images/whatsapp.png" alt="WhatsApp" width="512" height="512" loading="lazy">
+                    <span>Написать в WhatsApp</span>
                 </a>
             </form>
         </div>
@@ -933,69 +953,75 @@
             сотрудничества в нескольких областях этой отрасли.</p>
         <div class="services-info">
             <div class="services-info--item">
-                <img src="./images/фото8.jpeg" alt="Асфальтирование Алматы">
+                <img src="./images/asfaltirovanie-almaty.jpeg" alt="Асфальтирование Алматы" width="736" height="737" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Асфальтирование</h5>
+                    <h3><a href="asfaltirovanie/">Асфальтирование</a></h3>
                     <p>
                         Асфальтировка дорог и территорий - основная услуга, предоставляемая нашей компанией. Выполняем
                         работы качественно и с гарантией согласно договора.
                     </p>
+                    <a class="services-more" href="asfaltirovanie/">Подробнее об асфальтировании →</a>
                 </div>
             </div>
             <div class="services-info--item">
-                <img src="./images/фото7.jpeg" alt="Замена асфальта Алматы">
+                <img src="./images/zamena-asfalta.jpeg" alt="Замена асфальта Алматы" width="738" height="737" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Замена асфальта</h5>
+                    <h3><a href="yamochnyj-remont/">Ремонт и замена асфальта</a></h3>
                     <p>
                         Трещины, выбоины, шероховатости и, тем более, ямы - сильно портят внешний вид асфальтовой
                         поверхности и создают неудобства владельцам автомобилей. Самое время «вдохнуть жизнь» в старый
                         асфальт и заменить его новым. </p>
+                    <a class="services-more" href="yamochnyj-remont/">Подробнее о ремонте асфальта →</a>
                 </div>
             </div>
             <div class="services-info--item">
-                <img src="./images/фото22.jpg" alt="Строительство дорог Алматы">
+                <img src="./images/stroitelstvo-dorog.jpg" alt="Строительство дорог Алматы" width="500" height="500" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Строительство дорог</h5>
+                    <h3><a href="stroitelstvo-dorog/">Строительство дорог</a></h3>
                     <p>
                         Строительство новых дорог, магистралей, шоссе и дублеров наша компания выполняет от проекта и до
                         сдачи «под ключ». Строго по ГОСТам и СНИПам. </p>
+                    <a class="services-more" href="stroitelstvo-dorog/">Подробнее о строительстве дорог →</a>
                 </div>
             </div>
             <div class="services-info--item">
-                <img src="./images/фото6.jpeg" alt="Благоустройство Алматы">
+                <img src="./images/blagoustrojstvo.jpeg" alt="Благоустройство Алматы" width="589" height="589" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Благоустройство</h5>
+                    <h3><a href="blagoustrojstvo/">Благоустройство</a></h3>
                     <p>
                         Выполняем комплексное благоустройство территорий от дизайна и устройства зеленых зон до укладки
                         асфальта с нанесением дорожной разметки. </p>
+                    <a class="services-more" href="blagoustrojstvo/">Подробнее о благоустройстве →</a>
                 </div>
             </div>
             <div class="services-info--item">
-                <img src="./images/фото11.jpg" alt="Установка бортовых камней, габионов Алматы">
+                <img src="./images/bordyury-gabiony.jpg" alt="Установка бортовых камней, габионов Алматы" width="500" height="500" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Установка бортовых камней, габионов</h5>
-                    <p>Устанавливаем все виды бордюров лучших производителей «под ключ». Достаточно быстро.
+                    <h3><a href="bordyury/">Установка бортовых камней, габионов</a></h3>
+                    <p>Устанавливаем все виды бордюров лучших производителей «под ключ». Достаточно быстро.</p>
+                    <a class="services-more" href="bordyury/">Подробнее о бордюрах и габионах →</a>
                 </div>
             </div>
             <div class="services-info--item">
-                <img src="./images/фото5.jpeg" alt="Озеленение Алматы">
+                <img src="./images/ozelenenie.jpeg" alt="Озеленение Алматы" width="590" height="589" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Озеленение</h5>
+                    <h3><a href="ozelenenie/">Озеленение</a></h3>
                     <p>
                         Мы профессионально выполняем задачи по озеленению, включая планировку и проектирование
                         ландшафта, выбор и посадку растений, установку системы полива и освещения, а также создание
-                        рекреационных зон и детских площадок.
+                        рекреационных зон и детских площадок.</p>
+                    <a class="services-more" href="ozelenenie/">Подробнее об озеленении →</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="services">
-        <h2>Аренда спецтехники</h2>
+        <h2><a href="arenda-spetstehniki/">Аренда спецтехники</a></h2>
         <div class="services-info">
             <div class="services-info--items">
-                <img src="./images/tex1.jpg" alt="Услуги аренды дорожного катка Алматы">
+                <img src="./images/arenda-katka-liugong.jpg" alt="Услуги аренды дорожного катка Алматы" width="786" height="600" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Технические характеристики: Услуги дорожного катка LiuGong CLG 6032</h5>
+                    <h3>Технические характеристики: Услуги дорожного катка LiuGong CLG 6032</h3>
                     <table>
                         <tbody>
                             <tr>
@@ -1047,9 +1073,9 @@
                 </div>
             </div>
             <div class="services-info--items">
-                <img src="./images/tex2.jpg" alt="Услуги аренды фронтального погрузчика Алматы">
+                <img src="./images/arenda-pogruzchika-xcmg.jpg" alt="Услуги аренды фронтального погрузчика Алматы" width="510" height="339" loading="lazy">
                 <div class="services-info--item---left">
-                    <h5>Услуги фронтального погрузчика XCMG LW330FN</h5>
+                    <h3>Услуги фронтального погрузчика XCMG LW330FN</h3>
                     <table>
                         <tbody>
                             <tr>
@@ -1093,43 +1119,57 @@
     <footer>
         <div class="footer-item">
             <h5>ДСЭ</h5>
-            <a href="#aboutUs"> О нас </a>
-            <a href="#services"> Услуги </a>
-            <a href="#projects"> Проекты </a>
-            <a href="#reviews"> Отзывы </a>
-            <a href="#price"> Цены</a>
+            <a href="#aboutUs">О нас</a>
+            <a href="#projects">Проекты</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#price">Цены</a>
+            <a href="#call">Бесплатная консультация</a>
         </div>
         <div class="footer-item">
             <h5>Услуги</h5>
-            <a href="#services"> Асфальтирование </a>
-            <a href="#services"> Водоотведение </a>
-            <a href="#services"> Строительство дорог</a>
-            <a href="#services"> Ямочный ремонт </a>
-            <a href="#services"> Благоустройство территории</a>
+            <a href="asfaltirovanie/">Асфальтирование</a>
+            <a href="yamochnyj-remont/">Ямочный ремонт</a>
+            <a href="stroitelstvo-dorog/">Строительство дорог</a>
+            <a href="blagoustrojstvo/">Благоустройство территории</a>
+            <a href="ozelenenie/">Озеленение</a>
         </div>
         <div class="footer-item">
             <h5>Услуги</h5>
-            <a href="#services"> Ремонт дорог</a>
-            <a href="#services"> Нанесение разметки</a>
-            <a href="#services"> Облагораживание территории</a>
-            <a href="#services"> Укладка брусчатки </a>
-            <a href="#services"> Демонтаж асфальта </a>
+            <a href="vodootvedenie/">Водоотведение</a>
+            <a href="vodootvedenie/">Установка арычных лотков</a>
+            <a href="bordyury/">Установка бортовых камней</a>
+            <a href="bordyury/">Установка габионов</a>
+            <a href="blagoustrojstvo/">Укладка тротуарной плитки</a>
+            <a href="asfaltirovanie/">Демонтаж асфальта</a>
         </div>
         <div class="footer-item">
-            <h5>Услуги</h5>
-            <a href="#services"> Установка арычных лотков</a>
-            <a href="#services"> Установка бортовых камней </a>
-            <a href="#services"> Асфальтирование парковки</a>
-            <a href="#services"> Аренда спецтехники</a>
-            <a href="#services"> Аренда катка</a>
-            <a href="#services"> Аренда погрузчика</a>
+            <h5>Аренда и контакты</h5>
+            <a href="arenda-spetstehniki/">Аренда катка</a>
+            <a href="arenda-spetstehniki/">Аренда погрузчика</a>
+            <a href="tel:+77012554421">+7 (701) 255-44-21</a>
+            <a href="https://wa.me/77012554421" rel="nofollow">Написать в WhatsApp</a>
         </div>
-
     </footer>
     <script>
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("myBtn");
+        var closeBtn = document.getElementById("closeModal");
+        var openText = btn.textContent;
+
+        function setModal(open) {
+            modal.style.display = open ? "block" : "none";
+            btn.setAttribute("aria-expanded", open);
+            btn.textContent = open ? "Скрыть таблицу цен" : openText;
+        }
+
         btn.onclick = function () {
-            modal.style.display = "block";
+            setModal(modal.style.display !== "block");
+        }
+        closeBtn.onclick = function () {
+            setModal(false);
+            document.getElementById("price").scrollIntoView({ behavior: "smooth" });
         }
     </script>
+</body>
+
+</html>
